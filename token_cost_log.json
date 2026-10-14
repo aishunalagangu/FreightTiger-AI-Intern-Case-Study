@@ -5,6 +5,6 @@
   "output_tokens": 0,
   "model": null,
   "estimated_model_cost_usd": 0.0,
-  "cost_basis": "No LLM/model API is called; the supplied notes are matched by deterministic Python rules.",
-  "note": "This is a transparent baseline implementation. A hosted LLM is intentionally not used so the output is repeatable and incurs no model cost."
+  "cost_basis": "No LLM/model API is called; supplied notes are matched using deterministic Python rules.",
+  "note": "This implementation prioritizes repeatability and zero model cost. It does not use a generative LLM."
 }

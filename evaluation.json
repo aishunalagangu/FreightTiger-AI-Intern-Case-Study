@@ -8,9 +8,10 @@
   "unexplained_rows_have_blank_note_id": true,
   "all_rates_positive": true,
   "no_duplicate_route_weeks": true,
+  "own_history_uses_eight_calendar_weeks": true,
   "thresholds": {
     "own_history_pct": 0.15,
     "similar_routes_pct": 0.15
   },
-  "method": "Deterministic rule-based anomaly screening and exact route/date note retrieval; no LLM used."
+  "method": "Deterministic rule-based anomaly screening with a trailing eight-calendar-week own-history baseline and exact route/date note retrieval; no LLM used."
 }
