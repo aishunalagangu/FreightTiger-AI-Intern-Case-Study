@@ -1,0 +1,16 @@
+{
+  "input_rows": 2940,
+  "weekly_route_rows": 728,
+  "output_rows": 27,
+  "output_columns_match_contract": true,
+  "all_output_rows_are_triggered": true,
+  "justified_rows_have_note_id": true,
+  "unexplained_rows_have_blank_note_id": true,
+  "all_rates_positive": true,
+  "no_duplicate_route_weeks": true,
+  "thresholds": {
+    "own_history_pct": 0.15,
+    "similar_routes_pct": 0.15
+  },
+  "method": "Deterministic rule-based anomaly screening and exact route/date note retrieval; no LLM used."
+}

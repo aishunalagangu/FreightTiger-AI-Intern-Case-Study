@@ -1,0 +1,10 @@
+{
+  "runs": 1,
+  "llm_calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "model": null,
+  "estimated_model_cost_usd": 0.0,
+  "cost_basis": "No LLM/model API is called; the supplied notes are matched by deterministic Python rules.",
+  "note": "This is a transparent baseline implementation. A hosted LLM is intentionally not used so the output is repeatable and incurs no model cost."
+}

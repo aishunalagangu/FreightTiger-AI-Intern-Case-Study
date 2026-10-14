@@ -1,0 +1,6 @@
+Reproducibility check (same input files, three independent executions)
+Run 1 output.csv SHA-256: 8de2393d4464b02bdb6b18a1cbb664ef441cae71180c8472dbe8882e670249fc
+Run 2 output.csv SHA-256: 8de2393d4464b02bdb6b18a1cbb664ef441cae71180c8472dbe8882e670249fc
+Run 3 output.csv SHA-256: 8de2393d4464b02bdb6b18a1cbb664ef441cae71180c8472dbe8882e670249fc
+
+Result: PASS — all three output hashes match.
