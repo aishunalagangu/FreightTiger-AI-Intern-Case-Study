@@ -25,7 +25,7 @@ Files:
 1. `week_of` is the Monday of the shipment's Monday–Sunday week.
 2. Route key is `origin-destination`; `route_type` remains the provided value.
 3. Weekly cost per tonne-km = sum of freight cost / sum of (`quantity_tonnes * distance_km`) for shipments on that route in that week. This correctly weights shipments by tonne-km.
-4. Own-history baseline is the arithmetic mean of up to the previous eight *observed route-weeks*, strictly before the current week. No future weeks are used. When fewer than eight are available, all available prior weeks are used; when none exist, the comparison is `N/A`.
+4. Own-history baseline is the arithmetic mean of observed weekly cost-per-tonne-km values within the eight calendar weeks immediately preceding the current week. Only earlier weeks are used. Missing weeks do not cause older observations outside the eight-week window to be included. If no observations exist within the window, the comparison is `N/A`.
 5. Peer baseline is the average current-week rate of all other routes with the same `route_type`, excluding the current route. The peer percentage is current rate / peer average - 1.
 6. A candidate is emitted when its rate is at least 15% above either available baseline. The 15% threshold is an explicit heuristic because the brief requires anomaly flags but does not prescribe a numeric threshold. It is configurable at the top of `main.py`.
 7. `flagged=Yes` means an unexplained candidate requiring human review. `No (justified)` means a candidate matched a positive note that applies to that route and time. A note ID is populated only for justified cases.
